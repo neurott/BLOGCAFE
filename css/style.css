@@ -73,15 +73,9 @@ img{
 }
 
 /*header*/
-.webp .header{
-    background-image: url(../img/banner.webp);
-}
-
-.no-webp .header{
-    background-image: url(../img/banner.jpg);
-}
-
 .header{
+    background-image: url(../img/banner.jpg);
+    background-image: image-set(url(../img/banner.webp) type("image/webp"), url(../img/banner.jpg) type("image/jpeg"));
     
     height: 60rem;
     background-size: cover;
